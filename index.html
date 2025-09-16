@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>SURVEY FORM</h1>
+
+  <div class="container">
+    <h2>Let us know how we can improve</h2>
+    
+    <form>
+      <label for="name">*Name</label>
+      <input type="text" id="name" placeholder="Enter Your name" required>
+      
+      <label for="email">*Email</label>
+      <input type="email" id="email" placeholder="Enter Your Email" required>
+      
+      <label for="age">*Age</label>
+      <input type="number" id="age" placeholder="Age" required>
+      
+      <label for="file">Upload File</label>
+      <input type="file" id="file">
+      
+      <label for="role">Which option best describes your current role?</label>
+      <select id="role">
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Other</option>
+      </select>
+      
+      <label>How likely is it that you would recommend this program to a friend?</label>
+      <input type="radio" name="recommend" value="definitely"> Definitely <br>
+      <input type="radio" name="recommend" value="maybe"> Maybe <br>
+      <input type="radio" name="recommend" value="not-sure"> Not Sure <br>
+      
+      <label for="like">What do you like most here?</label>
+      <select id="like">
+        <option>Select an option</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Mentors</option>
+      </select>
+      
+      <label>What should be improved in the future (Check all that apply)</label>
+      <input type="checkbox" value="frontend"> Front-end Projects <br>
+      <input type="checkbox" value="backend"> Back-end Projects <br>
+      <input type="checkbox" value="data"> Data Visualization <br>
+      
+      <label for="comments">Any Comments or Suggestions?</label>
+      <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
